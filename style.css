@@ -1,11 +1,22 @@
 body {
-  font-family: Arial;
-  text-align: center;
-  background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
 }
 
-button {
-  padding: 10px 20px;
-  font-size: 18px;
-  cursor: pointer;
+h1 {
+    font-size: 40px; /* Makes the name very big */
+    color: #ce0000;  /* Industrial red color */
 }
+
+.btn {
+    display: block;
+    font-size: 22px; /* Makes buttons easy to tap */
+    padding: 20px;
+    margin: 15px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
