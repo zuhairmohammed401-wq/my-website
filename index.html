@@ -5,60 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AP Lathe Works</title>
     <style>
+        /* Modern Industrial Background */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #212121;
+            background-image: 
+                radial-gradient(circle at 2px 2px, #333 1px, transparent 0);
+            background-size: 24px 24px; /* Creates a clean 'Metal Grid' look */
+            font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
-            color: #222;
+            color: #eee;
         }
+
         header {
-            background-color: #ce0000; /* Industrial Red */
+            background: linear-gradient(135deg, #ce0000 0%, #8b0000 100%);
             color: #fff;
-            padding: 40px 10px;
+            padding: 50px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
         }
-        h1 {
-            font-size: 50px; /* Extra Large for visibility */
-            margin: 0;
-        }
-        .container { padding: 25px; }
+
+        h1 { font-size: 48px; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
         
-        /* Phone Number Buttons */
-        .phone-btn {
+        .container { padding: 30px 15px; }
+
+        /* Action Buttons */
+        .btn {
             display: block;
             text-decoration: none;
             padding: 22px;
-            margin: 15px auto;
-            border-radius: 15px;
-            font-size: 26px; /* Big text */
+            margin: 20px auto;
+            border-radius: 12px;
+            font-size: 24px;
             font-weight: bold;
             width: 90%;
             max-width: 450px;
-            background-color: #007bff;
-            color: white;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-align: center;
         }
 
-        /* Services Section */
-        .services-card {
-            background: white;
-            padding: 20px;
-            border-radius: 15px;
-            text-align: left;
-            margin: 20px auto;
-            max-width: 600px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        .btn:active { transform: scale(0.98); }
+
+        .phone-btn { background-color: #007bff; color: white; }
+        
+        /* New Location Button */
+        .map-btn { 
+            background-color: #4285F4; 
+            color: white;
+            border: 2px solid #fff;
         }
-        h2 { font-size: 35px; color: #ce0000; text-align: center; }
-        ul { list-style-type: square; padding-left: 30px; }
-        li { font-size: 22px; margin-bottom: 15px; line-height: 1.4; }
+
+        /* Services Styling */
+        .services-card {
+            background: rgba(40, 40, 40, 0.9);
+            padding: 25px;
+            border-radius: 20px;
+            text-align: left;
+            margin: 30px auto;
+            max-width: 600px;
+            border: 1px solid #444;
+        }
+
+        h2 { font-size: 32px; color: #ff4d4d; margin-bottom: 20px; text-align: center; }
+        ul { list-style-type: none; padding: 0; }
+        li { 
+            font-size: 20px; 
+            margin-bottom: 15px; 
+            padding-left: 35px;
+            position: relative;
+        }
+        li::before {
+            content: "⚙️";
+            position: absolute;
+            left: 0;
+        }
 
         .gallery img {
             width: 100%;
             max-width: 400px;
-            border-radius: 10px;
-            margin-bottom: 15px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border: 3px solid #444;
         }
     </style>
 </head>
@@ -66,38 +92,43 @@
 
 <header>
     <h1>AP LATHE WORKS</h1>
-    <p style="font-size: 22px;">Proprietor: Azhar Pasha</p>
+    <p style="font-size: 22px; opacity: 0.9;">Proprietor: Azhar Pasha</p>
 </header>
 
 <div class="container">
     
-    <a href="tel:+919343543455" class="phone-btn">📞 Call: 9343543455</a>
-    <a href="tel:+919741805106" class="phone-btn">📞 Call: 9741805106</a>
+    <a href="tel:+919343543455" class="btn phone-btn">📞 Call: 9343543455</a>
+    <a href="tel:+919741805106" class="btn phone-btn">📞 Call: 9741805106</a>
+
+    <a href="PASTE_YOUR_GOOGLE_MAPS_LINK_HERE" class="btn map-btn">
+        📍 Open Shop Location
+    </a>
 
     <div class="services-card">
-        <h2>Our Services</h2>
+        <h2>Our Expert Services</h2>
         <ul>
             <li>Bolt removal and fitting</li>
-            <li>Internal and external threading (thread cutting & repairing)</li>
+            <li>Internal and external threading</li>
             <li>Lathe machine turning work</li>
             <li>Arc welding and gas welding</li>
-            <li>Metal cutting, shaping, and finishing</li>
-            <li>Custom fabrication and modification as per customer requirement</li>
+            <li>Metal cutting and finishing</li>
+            <li>Custom fabrication jobs</li>
         </ul>
     </div>
 
-    <hr>
+    <hr style="border: 1px solid #444;">
 
     <h2>Work Photos</h2>
     <div class="gallery">
-        <img src="photo1.jpg" alt="Lathe Work">
-        <img src="photo2.jpg" alt="Welding Work">
+        <img src="photo1.jpg" alt="Work Photo">
+        <img src="photo2.jpg" alt="Work Photo">
     </div>
 
 </div>
 
 </body>
 </html>
+
 
 
 
